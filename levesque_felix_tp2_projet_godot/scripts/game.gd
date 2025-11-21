@@ -1,10 +1,10 @@
 extends Node2D
 
-@onready var pause_menu: Control = $Player/Camera2D/PauseMenu
+@onready var pause_menu: Control = $CanvasLayer/Control/PauseMenu
 
 var paused = false
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		pauseMenu()
 

@@ -23,13 +23,13 @@ layout_mode = 2
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_n87rw")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 40
 text = "Resume"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_n87rw")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 40
 text = "Quit"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]

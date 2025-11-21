@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxx43q0agsjo8"]
+[gd_scene load_steps=14 format=3 uid="uid://bxx43q0agsjo8"]
 
 [ext_resource type="Script" uid="uid://ebhglfv6aksm" path="res://scripts/slime.gd" id="1_n6pvg"]
 [ext_resource type="Texture2D" uid="uid://b5sg8nn5qvtvk" path="res://assets/sprites/slime_green.png" id="1_p2gj0"]
@@ -20,6 +20,22 @@ region = Rect2(48, 24, 24, 24)
 atlas = ExtResource("1_p2gj0")
 region = Rect2(72, 24, 24, 24)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6pvg"]
+atlas = ExtResource("1_p2gj0")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5wyi"]
+atlas = ExtResource("1_p2gj0")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0l8pv"]
+atlas = ExtResource("1_p2gj0")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnioy"]
+atlas = ExtResource("1_p2gj0")
+region = Rect2(72, 48, 24, 24)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_v5wyi"]
 animations = [{
 "frames": [{
@@ -37,6 +53,23 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6pvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5wyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0l8pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnioy")
+}],
+"loop": false,
+"name": &"hurt",
 "speed": 10.0
 }]
 

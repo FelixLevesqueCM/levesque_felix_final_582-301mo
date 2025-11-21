@@ -1,8 +1,24 @@
 extends Node
 
-var score = 0
-@onready var score_label: Label = $ScoreLabel
+@onready var score: Control = $"../CanvasLayer/Control/VBoxContainer/Score/Label"
+
+func _ready():
+	score.text = str(GameState.score_count)
+	GameState.key = false
 
 func add_point():
-	score += 1
-	score_label.text = "You collected " + str(score) + " coins!"
+	GameState.score_count += 1
+	print(GameState.score_count)
+	score.text = str(GameState.score_count)
+
+func pickup_key():
+	GameState.key = true
+
+func change_level():
+	if GameState.key == true:
+		GameState.key = false
+		GameState.level += 1
+		if GameState.level == 1:
+			get_tree().change_scene_to_file("res://scenes/Level2.tscn")
+		elif GameState.level == 2:
+			get_tree().change_scene_to_file("res://scenes/Level3.tscn")
