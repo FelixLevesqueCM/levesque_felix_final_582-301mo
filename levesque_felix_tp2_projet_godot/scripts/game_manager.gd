@@ -22,3 +22,7 @@ func change_level():
 			get_tree().change_scene_to_file("res://scenes/Level2.tscn")
 		elif GameState.level == 2:
 			get_tree().change_scene_to_file("res://scenes/Level3.tscn")
+		elif GameState.level == 3:
+			get_tree().change_scene_to_file("res://scenes/Level4.tscn")
+		elif GameState.level == 4:
+			get_tree().change_scene_to_file("res://scenes/Level5.tscn")

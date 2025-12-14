@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bngmrrroqylas"]
 
-[ext_resource type="Texture2D" uid="uid://dsmjdg3e4efqq" path="res://assets/sprites/fruit.png" id="1_fttkb"]
 [ext_resource type="Script" uid="uid://blnx17100s1of" path="res://scripts/key.gd" id="1_wy8tx"]
+[ext_resource type="Texture2D" uid="uid://cu870lkh4p6n8" path="res://assets/sprites/key.png" id="2_brs3p"]
 [ext_resource type="AudioStream" uid="uid://r554ppb5lto3" path="res://assets/sounds/key_pickup.wav" id="2_wy8tx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_brs3p"]
@@ -112,7 +112,7 @@ script = ExtResource("1_wy8tx")
 shape = SubResource("CircleShape2D_brs3p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_fttkb")
+texture = ExtResource("2_brs3p")
 region_enabled = true
 region_rect = Rect2(0, 48, 16, 16)
 

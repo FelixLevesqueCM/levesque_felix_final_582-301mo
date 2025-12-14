@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://qxur1alst0cf"]
 
 [ext_resource type="Script" uid="uid://bp3qvgyx5845y" path="res://scripts/level_end.gd" id="1_07sjm"]
-[ext_resource type="Texture2D" uid="uid://dfep06u63hl4n" path="res://assets/sprites/black_gradient.png" id="2_07sjm"]
+[ext_resource type="Texture2D" uid="uid://dsxyh2piahmgn" path="res://assets/sprites/world_tileset_2.png" id="2_07sjm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jgevt"]
-size = Vector2(16, 32)
+size = Vector2(14, 32)
 
 [node name="level_end" type="Area2D"]
 collision_mask = 2
@@ -15,8 +15,8 @@ position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_jgevt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -8)
-scale = Vector2(1, 2)
+position = Vector2(0.28, -8)
+scale = Vector2(0.965, 1)
 texture = ExtResource("2_07sjm")
 region_enabled = true
-region_rect = Rect2(0, 48, 16, 16)
+region_rect = Rect2(16, 48, 16, 32)

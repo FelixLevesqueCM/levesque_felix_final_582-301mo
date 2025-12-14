@@ -1,23 +1,24 @@
-[gd_scene load_steps=14 format=3 uid="uid://bxx43q0agsjo8"]
+[gd_scene load_steps=15 format=3 uid="uid://bxx43q0agsjo8"]
 
 [ext_resource type="Script" uid="uid://ebhglfv6aksm" path="res://scripts/slime.gd" id="1_n6pvg"]
 [ext_resource type="Texture2D" uid="uid://b5sg8nn5qvtvk" path="res://assets/sprites/slime_green.png" id="1_p2gj0"]
 [ext_resource type="PackedScene" uid="uid://biuh573hcwk05" path="res://scenes/killzone.tscn" id="2_n6pvg"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pjw23"]
-atlas = ExtResource("1_p2gj0")
-region = Rect2(0, 24, 24, 24)
+[ext_resource type="Texture2D" uid="uid://bqydsdkytpbjg" path="res://assets/sprites/slime_red.png" id="2_pjw23"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2npkn"]
-atlas = ExtResource("1_p2gj0")
-region = Rect2(24, 24, 24, 24)
+atlas = ExtResource("2_pjw23")
+region = Rect2(0, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fd6lc"]
-atlas = ExtResource("1_p2gj0")
-region = Rect2(48, 24, 24, 24)
+atlas = ExtResource("2_pjw23")
+region = Rect2(24, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gstla"]
-atlas = ExtResource("1_p2gj0")
+atlas = ExtResource("2_pjw23")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xjuo"]
+atlas = ExtResource("2_pjw23")
 region = Rect2(72, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n6pvg"]
@@ -40,9 +41,6 @@ region = Rect2(72, 48, 24, 24)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pjw23")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_2npkn")
 }, {
 "duration": 1.0,
@@ -50,6 +48,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gstla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xjuo")
 }],
 "loop": true,
 "name": &"default",
@@ -85,6 +86,7 @@ sprite_frames = SubResource("SpriteFrames_v5wyi")
 autoplay = "default"
 
 [node name="killzone" parent="." instance=ExtResource("2_n6pvg")]
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 position = Vector2(0, -6)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bb45pa3y66hwl"]
 
 [ext_resource type="FontFile" uid="uid://ch3jg6frv3btp" path="res://assets/fonts/PixelOperator8.ttf" id="1_bak1h"]
-[ext_resource type="Texture2D" uid="uid://c1fntj7v2s4ft" path="res://assets/sprites/coin.png" id="2_plgac"]
+[ext_resource type="Texture2D" uid="uid://c1fntj7v2s4ft" path="res://assets/sprites/coin.png" id="2_bak1h"]
 
 [node name="Score" type="Control"]
 layout_mode = 3
@@ -23,6 +23,6 @@ vertical_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2.5, 2.5)
-texture = ExtResource("2_plgac")
+texture = ExtResource("2_bak1h")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
