@@ -3,10 +3,10 @@ Projet Final
 Félix Lévesque
 
 
-Soul Knight
+## Soul Knight
 évite les obstacles et sauve la princesse
 
-[A] - gauche
-[D] - droite
-[W] - sauter
-[espace] + [A] ou [D] = roullade
+- [A] - gauche
+- [D] - droite
+- [W] - sauter
+- [espace] + [A] ou [D] = roullade
